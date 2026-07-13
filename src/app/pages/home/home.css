@@ -1,0 +1,104 @@
+/* Section Présentation */
+.presentation-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #F9D0A3; /* Pêche */
+    color: #151217; /* Noir */
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.presentation-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #DA001E; /* Rouge */
+}
+
+.presentation-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Filtres & Recherche */
+.filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #151217;
+    border-radius: 8px;
+    color: white;
+}
+
+.search-box input, .sort-box select {
+    font-family: 'Comfortaa', sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #FDD90B; /* Jaune */
+}
+
+.search-box input {
+    min-width: 250px;
+}
+
+/* Grille Responsive du Catalogue */
+.products-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Carte Produit */
+.product-card {
+    border: 2px solid #151217;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+    border-color: #DA001E;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.product-details h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem 0;
+    color: #151217;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #DA001E;
+    margin-bottom: 1rem;
+}
+
+.btn-view {
+    display: inline-block;
+    background-color: #FDD90B;
+    color: #151217;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-view:hover {
+    background-color: #F9D0A3;
+}
