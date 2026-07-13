@@ -1,10 +1,35 @@
-<!-- Barre de recherche -->
+<section class="presentation-section">
+    <h2>Au Petit Village</h2>
+    <p>Découvrez nos figurines faites main, inspirées de la célèbre bande dessinée Astérix et Obélix. Conçues avec passion pour les grands nostalgiques des aventures gauloises !</p>
+</section>
 
-<input type="text" placeholder="Rechercher une figurine..." [(ngModel)]="searchTerm"/>
+<section class="filters-section">
+    <div class="search-box">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher une figurine..." />
+    </div>
 
-<!-- Affichage avec filtrage et tri combinés-->
+    <div class="sort-box">
+        <label for="sort">Trier par prix :</label>
+        <select id="sort" [(ngModel)]="sortDirection">
+            <option value="asc">Prix croissant</option>
+            <option value="desc">Prix décroissant</option>
+        </select>
+    </div>
+</section>
 
-<div *ngFor="let product of products | filterByName:searchTerm | sortbyPrice:'asc'">
-    <h3>{{ product.name }}</h3>
-    <p>{{ product.price }}</p>
-</div>
+<section class="products-catalog">
+    <div class="product-card" *ngFor="let product of products | filterByName:searchTerm | sortbyPrice:sortDirection">
+        
+        <div class="image-wrapper">
+        <img [src]="product.imageUrl" [alt]="product.name">
+        </div>
+        
+        <div class="product-details">
+        <h3>{{ product.name }}</h3>
+        <p class="price">{{ product.price }} €</p>
+        
+        <a [routerLink]="['/product', product.id]" class="btn-view">Voir les détails</a>
+        </div>
+
+    </div>
+</section>
