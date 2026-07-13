@@ -1,59 +1,41 @@
-# AuPetitVillage
+# Au Petit Village
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.17.
+Bienvenue sur le dépôt du projet **Au Petit Village**, une application web développée avec **Angular**. Ce site permet de découvrir, rechercher et trier une collection unique de figurines artisanales inspirées de l'univers d'Astérix et Obélix.
 
-## Development server
+## 🚀 Fonctionnalités
+* **Catalogue dynamique :** Visualisation fluide de l'ensemble des figurines.
+* **Fiches produits détaillées :** Accès aux informations complètes via un routage dynamique.
+* **Recherche avancée :** Filtrage en temps réel des figurines par nom.
+* **Tri intelligent :** Classement des produits par prix (croissant ou décroissant).
+* **Responsive Design :** Interface optimisée pour tous les types d'écrans.
 
-To start a local development server, run:
+## 🛠 Stack Technique
+* **Framework :** Angular (Standalone Components)
+* **Langage :** TypeScript
+* **Styling :** CSS
+* **Gestion des données :** Service Angular avec typage TypeScript
+* **Gestion des vues :** Routing Angular et Pipes personnalisés
+
+## 🎨 Charte Graphique
+Le projet respecte scrupuleusement la palette de couleurs suivante :
+* **Rouge :** `#DA001E`
+* **Jaune :** `#FDD90B`
+* **Pêche :** `#F9D0A3`
+* **Noir :** `#151217`
+
+## 📦 Installation et Lancement
+
+Pour lancer le projet localement, exécutez les commandes suivantes dans votre terminal :
 
 ```bash
+# 1. Cloner le dépôt
+git clone [https://github.com/votre-utilisateur/au-petit-village.git](https://github.com/votre-utilisateur/au-petit-village.git)
+
+# 2. Accéder au dossier
+cd au-petit-village
+
+# 3. Installer les dépendances
+npm install
+
+# 4. Lancer le serveur de développement
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
