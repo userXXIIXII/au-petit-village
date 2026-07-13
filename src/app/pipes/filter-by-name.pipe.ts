@@ -1,0 +1,1 @@
+// Pour filtrer la liste des figurines selon ce que l'utilisateur tape dans une barre de recherche
