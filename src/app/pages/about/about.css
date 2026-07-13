@@ -1,0 +1,28 @@
+.about-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #FDD90B; /* Bordure Jaune */
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.about-header h2 {
+    font-size: 3rem;
+    color: #DA001E; 
+    margin: 0;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #151217; 
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
