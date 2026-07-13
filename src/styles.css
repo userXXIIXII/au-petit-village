@@ -22,3 +22,7 @@ p, span, a, li, input, select, button {
     font-family: 'Comfortaa', sans-serif;
 }
 
+main {
+    min-height: calc(100vh - 200px); /* Ajuste la hauteur minimale pour tenir compte du header et du footer */
+    padding: 20px;
+}

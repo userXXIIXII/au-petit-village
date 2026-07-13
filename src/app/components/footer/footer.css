@@ -3,6 +3,7 @@
     color: white;
     padding: 2rem 1rem;
     border-top: 3px solid #DA001E; 
+    margin-top: 4rem;
 }
 
 .footer-content {
@@ -32,4 +33,13 @@
 .footer-links a:hover {
     color: #FDD90B; 
     cursor: pointer;
+}
+
+img {
+    max-height: 50px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
