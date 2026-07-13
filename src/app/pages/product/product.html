@@ -1,1 +1,22 @@
-<p>product works!</p>
+<div class="product-detail-container" *ngIf="product">
+    
+    <div class="product-image-box">
+        <img [src]="product.imageUrl" [alt]="product.name">
+    </div>
+    
+    <div class="product-info-box">
+        <h2>{{ product.name }}</h2>
+        <p class="product-price">{{ product.price }} €</p>
+        <p class="product-description">
+            {{ product.description }}
+        </p>
+        
+        <a routerLink="/" class="btn-back">Retour au catalogue</a>
+    </div>
+
+</div>
+
+<div class="error-box" *ngIf="!product">
+    <h2>Figurine introuvable</h2>
+    <a routerLink="/" class="btn-back">Retour à l'accueil</a>
+</div>
