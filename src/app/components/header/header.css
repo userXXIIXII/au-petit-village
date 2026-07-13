@@ -4,6 +4,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .logo-link {
@@ -17,9 +18,27 @@ header {
 .logo {
     max-height: 180px;
     max-width: auto;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'effet de zoom */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Agrandit légèrement le logo au survol */
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #DA001E; 
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #DA001E; 
+    cursor: pointer;
+    transform: scale(1.1); /* Agrandit légèrement le lien au survol */
 }
